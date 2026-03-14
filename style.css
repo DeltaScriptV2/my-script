@@ -1,0 +1,120 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  background: #0a0a1a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+.card {
+  background: #12122a;
+  border: 1px solid #2a2a4a;
+  border-radius: 16px;
+  padding: 30px 24px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+h1 { font-size: 28px; font-weight: bold; margin-bottom: 4px; }
+.subtitle { color: #aaa; margin-bottom: 8px; }
+.users { margin-bottom: 20px; }
+.tabs {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+.tab {
+  background: #1e1e3a;
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.tab.active { background: #c0392b; }
+.script-box {
+  background: #0d0d1f;
+  border-radius: 10px;
+  padding: 14px;
+  font-size: 13px;
+  font-family: monospace;
+  text-align: left;
+  word-break: break-all;
+  margin-bottom: 16px;
+  color: #e0e0e0;
+}
+.script-box {
+  background: #0d0d1f;
+  border-radius: 10px;
+  padding: 14px;
+  font-size: 13px;
+  font-family: monospace;
+  text-align: left;
+  margin-bottom: 16px;
+  color: #e0e0e0;
+
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+/* SNAKE RGB BORDER COPY BUTTON */
+.copy-btn-wrapper {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 30px;
+  padding: 3px;
+  background: transparent;
+}
+
+.copy-btn-wrapper::before {
+  content: '';
+  position: absolute;
+  inset: -3px;
+  border-radius: 32px;
+  padding: 3px;
+  background: conic-gradient(
+    from var(--angle, 0deg),
+    red, orange, yellow, lime, cyan, blue, violet, red
+  );
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  animation: spin 2s linear infinite;
+}
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes spin {
+  to { --angle: 360deg; }
+}
+
+.copy-btn {
+  background: #e74c3c;
+  color: white;
+  border: none;
+  width: 100%;
+  padding: 14px;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+
+.copy-btn:hover { background: #c0392b; }
+.links { display: flex; justify-content: center; gap: 20px; margin-bottom: 16px; }
+.links a { color: #aaa; text-decoration: none; font-size: 14px; }
+.links a:hover { color: white; }
+.footer { color: #555; font-size: 12px; }
