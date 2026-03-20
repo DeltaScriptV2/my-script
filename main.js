@@ -1,7 +1,8 @@
 const scripts = {
   StealaBrainrot: 'loadstring(game:HttpGet("https://raw.githubusercontent.com/DeltaScriptV2/Free/refs/heads/main/IeakV2"))()',
   AdoptMe: 'loadstring(game:HttpGet("https://raw.githubusercontent.com/DeltaScriptV2/V.2/refs/heads/main/Adopt_Me"))()',
-  EscapeTsunamiForBrainrots: 'loadstring(game:HttpGet("https://raw.githubusercontent.com/DeltaScriptV2/V2/refs/heads/main/EscapeTsunamiForBrainrots"))()'
+  EscapeTsunamiForBrainrots: 'loadstring(game:HttpGet("https://raw.githubusercontent.com/DeltaScriptV2/V2/refs/heads/main/EscapeTsunamiForBrainrots"))()',
+  MM2: 'loadstring(game:HttpGet("https://raw.githubusercontent.com/DeltaScriptV2/NoKey/refs/heads/main/MM2"))()'
 };
 
 function setScript(game, btn) {
@@ -14,13 +15,14 @@ function copyScript() {
   const text = document.getElementById("scriptBox").innerText;
   navigator.clipboard.writeText(text).then(() => alert("✅ Script Copied!"));
 }
+
 function randomActiveUsers() {
   const users = document.getElementById("activeUsers");
-  const min = 100; // minimum number of users
-  const max = 500; // maximum number of users
+  const min = 100;
+  const max = 500;
   const randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
   users.textContent = `👥 Active Users: ${randomNumber}`;
 }
 
-// Update every 10 seconds
+// Update every 2 seconds
 setInterval(randomActiveUsers, 2000);
