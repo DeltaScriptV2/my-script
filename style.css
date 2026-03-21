@@ -4,22 +4,22 @@
 
 body {
   background: 
-    linear-gradient(rgba(255, 182, 193, 0.4), rgba(199, 102, 143, 0.6)),
-    url("https://images.unsplash.com/photo-1525310072745-f49212b5ac6d?auto=format&fit=crop&w=1600&q=80");
+    linear-gradient(rgba(255, 192, 203, 0.25), rgba(255, 182, 193, 0.35)),
+    url("https://i.imgur.com/1Q9Z1Zm.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   font-family: Arial, sans-serif;
   color: white;
-  overflow: hidden;
 }
 
 .card {
-  background: rgba(18, 18, 42, 0.85);
+  background: rgba(18, 18, 42, 0.7);
   border: 1px solid #2a2a4a;
   border-radius: 16px;
   padding: 30px 24px;
@@ -40,16 +40,24 @@ h1 { font-size: 28px; font-weight: bold; margin-bottom: 4px; }
   flex-wrap: wrap;
 }
 
-/* ✨ Buttons with dark pink border and gradient inside */
+/* 🌸 GINGHAM BUTTON STYLE */
 .tab {
-  border: 2px solid #c0392b; /* dark pink border */
-  background: linear-gradient(135deg, #ffbfdc, #ffe4e1, #ffe5d9); /* light pink → peach gradient */
-  color: #2a2a2a;
+  border: 2px solid #c97a9a;
+  background-image: 
+    linear-gradient(45deg, #ffd6e7 25%, transparent 25%),
+    linear-gradient(-45deg, #ffd6e7 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, #ffd6e7 75%),
+    linear-gradient(-45deg, transparent 75%, #ffd6e7 75%);
+  background-size: 20px 20px;
+  background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+  background-color: #fff0f5;
+
+  color: #5a2a3a;
   padding: 8px 18px;
-  border-radius: 8px;
+  border-radius: 10px;
   cursor: pointer;
   font-size: 14px;
-  transition: all 0.3s ease;
+  transition: 0.3s;
 }
 
 .tab:hover {
@@ -57,9 +65,9 @@ h1 { font-size: 28px; font-weight: bold; margin-bottom: 4px; }
 }
 
 .tab.active {
-  background: linear-gradient(135deg, #ff8fbf, #ffc0cb, #ffe5d9);
-  color: white;
-  border: 2px solid #c0392b;
+  border: 2px solid #ff8fbf;
+  background-color: #ffd6e7;
+  color: #fff;
 }
 
 .script-box {
@@ -69,45 +77,32 @@ h1 { font-size: 28px; font-weight: bold; margin-bottom: 4px; }
   font-size: 13px;
   font-family: monospace;
   text-align: left;
-  word-break: break-all;
   margin-bottom: 16px;
   color: #e0e0e0;
   white-space: pre-wrap;
   word-break: break-word;
 }
 
-/* 🎋 Bamboo patch style copy button */
-.copy-btn-wrapper {
-  position: relative;
-  width: 100%;
-  margin-bottom: 20px;
-  border-radius: 30px;
-  padding: 3px;
-  background: transparent;
-}
-
-.copy-btn-wrapper::before {
-  content: '';
-  position: absolute;
-  inset: -3px;
-  border-radius: 32px;
-  padding: 3px;
-  background: linear-gradient(145deg, #c0392b 40%, #ffffff 60%); /* dark pink + white patch style */
-}
-
+/* 🌸 COPY BUTTON */
 .copy-btn {
   font-family: 'Archivo Black', sans-serif;
-  background: #ffbfdc; /* light pink base inside patch */
-  color: #2a2a2a;
-  border: none;
+  background-image: 
+    linear-gradient(45deg, #ffc0cb 25%, transparent 25%),
+    linear-gradient(-45deg, #ffc0cb 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, #ffc0cb 75%),
+    linear-gradient(-45deg, transparent 75%, #ffc0cb 75%);
+  background-size: 20px 20px;
+  background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+  background-color: #ffe4ec;
+
+  color: #5a2a3a;
+  border: 2px solid #c97a9a;
   width: 100%;
   padding: 14px;
   border-radius: 30px;
   font-size: 16px;
   cursor: pointer;
-  position: relative;
-  z-index: 1;
-  transition: all 0.3s ease;
+  transition: 0.3s;
 }
 
 .copy-btn:hover {
