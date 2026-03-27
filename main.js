@@ -23,5 +23,4 @@ function randomActiveUsers() {
   users.textContent = `👥 Active Users: ${randomNumber}`;
 }
 
-// Update every 2 seconds
 setInterval(randomActiveUsers, 2000);
