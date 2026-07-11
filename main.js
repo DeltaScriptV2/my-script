@@ -1,8 +1,8 @@
 const scripts = {
   MurderMystery2: 'loadstring(game:HttpGet("https://raw.githubusercontent.com/xentace/MM2/refs/heads/main/script20%25MM2"))()',
   StealaBrainrot: 'loadstring(game:HttpGet("https://raw.githubusercontent.com/DeltaScriptV2/Free/refs/heads/main/IeakV2"))()',
-  AdoptMe: 'loadstring(game:HttpGet("https://raw.githubusercontent.com/DeltaScriptV2/V.2/refs/heads/main/Adopt_Me"))()',
-  SailorPiece: 'loadstring(game:HttpGet("https://raw.githubusercontent.com/xentace/sailor/refs/heads/main/sailor%2520piece%2520piece"))()'
+  AdoptMe: 'loadstring(game:HttpGet("https://raw.githubusercontent.com/xentace/ADM/refs/heads/main/square2"))()',
+  GrowaGarden2: 'loadstring(game:HttpGet("https://raw.githubusercontent.com/xentace/GAG2/refs/heads/main/growagarden2"))()'
 };
 
 function setScript(game, btn) {
